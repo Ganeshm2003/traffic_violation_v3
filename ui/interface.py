@@ -249,52 +249,7 @@ def create_interface(image_processor, video_processor):
                 
                 clear_status = gr.Markdown()
         
-        # Enhanced feature description
-        with gr.Accordion("📋 Enhanced Features & Usage Guide", open=False):
-            gr.Markdown("""
-            ### 🚀 **Enhanced Features:**
-            
-            #### 🤖 **Automatic Violation Line Detection**
-            - Automatically detects zebra crossings and road markings
-            - Creates violation line before crossings for red light detection
-            - Manual input available as override option
-            
-            #### 🔍 **Improved License Plate Detection**
-            - Enhanced OCR with preprocessing for Indian license plates
-            - Better handling of varied fonts, backgrounds, and lighting
-            - Supports multiple Indian license plate formats
-            
-            #### 🚗 **Fixed Speed Detection**
-            - Accurate speed calculation with configurable limits
-            - Eliminates false speeding violations
-            - Default speed limit: 40 km/h
-            
-            #### 📊 **Enhanced Management**
-            - Screenshots automatically saved and linked
-            - Repeat offender detection based on license plates
-            - CSV logs with complete violation history
-            - Clear logs functionality
-            
-            ### 📖 **Usage Instructions:**
-            
-            1. **Upload** your traffic image or video
-            2. **Violation Line**: Leave empty for auto-detection, or specify coordinates manually
-            3. **Enable** license plate detection for complete logging
-            4. **Process** and review detected violations
-            5. **Download** CSV logs or clear history as needed
-            
-            ### 🔧 **Detection Types:**
-            - **Red Light Violations**: Vehicles crossing violation line during red light
-            - **No Helmet Violations**: Motorcycle/bicycle riders without helmets  
-            - **Speeding Violations**: Vehicles exceeding speed limit
-            - **Repeat Offender Tracking**: Based on license plate history
-            
-            ### 📝 **Line Format Examples:**
-            - Horizontal: `[(50, 300), (650, 300)]`
-            - Vertical: `[(400, 100), (400, 500)]`
-            - Diagonal: `[(100, 200), (500, 400)]`
-            """)
-        
+
         # Event handlers
         process_img_btn.click(
             interface.process_image,
