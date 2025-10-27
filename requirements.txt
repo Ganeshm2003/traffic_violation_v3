@@ -1,11 +1,11 @@
-streamlit
-opencv-python-headless
-numpy
-pandas
-ultralytics
-easyocr
-torch --extra-index-url https://download.pytorch.org/whl/cpu
-torchvision --extra-index-url https://download.pytorch.org/whl/cpu
-scikit-image
-nltk
-matplotlib
+gradio==3.39.0
+opencv-python==4.8.0.78
+numpy==1.24.3
+pandas==2.0.8
+ultralytics==8.0.196
+easyocr==1.7.0
+torch==2.0.0
+torchvision>0.15.0
+scikit-image==0.21.0
+nltk==3.8.1
+matplotlib==3.7.2
